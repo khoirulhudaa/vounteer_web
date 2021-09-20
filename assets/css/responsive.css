@@ -4,12 +4,13 @@
     background-color: transparent;
     position: absolute;
     top: 20px;
+    opacity: 0;
     left: 0;
     padding: 20px 10px;
     height: max-content;
-    display: flex;
     color: black;
     width: 100vw;
+    display: none;
     justify-content: space-between;
 }
 
@@ -17,6 +18,14 @@
     width: 180px;
     position: relative;
     margin-left: 0px;
+}
+
+
+.navbar .nav-link {
+    color: black;
+    font-weight: normal;
+    display: none;
+    opacity: 0;
 }
 
 .back-to-top {
@@ -39,6 +48,10 @@
     color: white;
     opacity: 0;
     margin-bottom: 0;
+}
+
+.navbar-toggler {
+    display: none;
 }
     
 .section-hero {
@@ -186,13 +199,51 @@ input:focus {
     display: none;
 }
 
+
+/* style untuk section-gallery */
+
+.section-gallery {
+    position: relative;
+    width:94vw;
+    margin-left: auto;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    height: max-content;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.section-gallery img:hover {
+    transition: 0.3s;
+    filter: brightness(80%);
+    transform: scale(0.98);
+}
+
+.section-gallery h2 {
+    font-weight: bold;
+    font-size: 32px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.section-gallery p {
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
 /* style untuk section-vounteer */
 .section-vounteer {
     position: relative;
     width: 100vw;
     height: max-content;
     padding-bottom: 50px;
-    margin-top: 70px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -650,7 +701,7 @@ input:focus {
     margin-right: auto;
     height: max-content;
     display: flex;
-    display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -668,13 +719,16 @@ input:focus {
     justify-content: center;
     align-items: center;
     width: 100%;
+    text-align: center;
     flex-direction: column;
 }
 
 .section-info h2 {
     font-weight: bold;
     font-size: 34px;
-    width: 96vw;
+    position: relative;
+    left: -12px;
+    width: 100vw;
     margin-bottom: 40px;
 }
 
@@ -843,6 +897,53 @@ input:focus {
     z-index: 1;
 }
 
+
+
+/* style untuk section-testi */
+
+.section-testi {
+    position: relative;
+    width: 90vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testi-left {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+.testi-left h2 {
+    font-weight: bold;
+    font-size: 38px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.testi-left p {
+    font-size: 16px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testi-right {
+    width: 100%;
+    padding-right: 40px;
+    height: 300px;
+}
 
 
 }

@@ -150,6 +150,12 @@ html {
     position: relative;
     top: 4px;
     width: 40px;
+    transition: 0.3s;
+}
+
+.aksi img:hover {
+    transform: scale(1.2) rotate(20deg);
+    transition: 0.3s;
 }
 
 .aksi small {
@@ -159,7 +165,7 @@ html {
 
 .hero-left h1 {
     font-size: 56px;
-    width: 60%;
+    width: 80%;
     margin-top: 30px;
     font-weight: bold;
 }
@@ -249,6 +255,41 @@ input:focus {
 }
 
 
+/* style untuk section-gallery */
+
+.section-gallery {
+    position: relative;
+    width: 90vw;
+    margin-left: auto;
+    margin-top: 300px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    height: max-content;
+    transition: 0.3s;
+}
+
+.section-gallery img:hover {
+    transition: 0.3s;
+    filter: brightness(80%);
+    transform: scale(0.98);
+}
+
+.section-gallery h2 {
+    font-weight: bold;
+    font-size: 50px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.section-gallery p {
+    font-size: 19px;
+    margin-bottom: 60px;
+}
+
 /* style untuk section-sponsor */
 
 .section-sponsor {
@@ -279,7 +320,7 @@ input:focus {
     width: 100vw;
     height: max-content;
     padding-bottom: 50px;
-    margin-top: 270px;
+    margin-top: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,8 +430,12 @@ input:focus {
 
 .section-menu h2 {
     font-weight: bold;
-    font-size: 40px;
-    width: 40%;
+    font-size: 50px;
+    width: 70%;
+}
+
+.section-menu p {
+    font-size: 19px;
 }
 
 .wrap-menu {
@@ -582,8 +627,8 @@ input:focus {
 
 .section-benefits h2 {
     font-weight: bold;
-    font-size: 40px;
-    width: 40%;
+    font-size: 50px;
+    width: 50%;
     margin-bottom: 40px;
 }
 
@@ -654,6 +699,7 @@ input:focus {
 
 .btn-benefits {
     top: 0;
+    margin-top: 20px;
     transform: scale(1.1);
     border-radius: 400px;
     background-color: #135CE7;
@@ -696,8 +742,8 @@ input:focus {
 
 .section-info h2 {
     font-weight: bold;
-    font-size: 40px;
-    width: 40%;
+    font-size: 50px;
+    width: 50%;
     margin-bottom: 40px;
 }
 
@@ -764,6 +810,46 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     width: 84%;
+}
+
+
+/* style untuk section-testi */
+
+.section-testi {
+    position: relative;
+    width: 78vw;
+    margin-top: 180px;
+    margin-bottom: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testi-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.testi-left h2 {
+    font-weight: bold;
+    font-size: 50px;
+    width: 86%;
+    margin-bottom: 20px;
+}
+.testi-left p {
+    font-size: 19px;
+    width: 80%;
+}
+
+.testi-right {
+    width: 50%;
+    height: 400px;
 }
 
 
