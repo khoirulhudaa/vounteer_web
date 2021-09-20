@@ -48,7 +48,7 @@
     <div  data-aos="fade-up" class="hero-left">
     <nav  data-aos="fade-up" class="navbar navbar-expand-lg navbar-light">
       <div  data-aos="fade-up" class="container-fluid">
-      <a  data-aos="fade-up" class="navbar-brand" href="#"><img src="./assets/img/logos.png" alt="logo"  data-aos="fade-up" class="logo"></a>
+      <a  data-aos="fade-up" class="navbar-brand" href="#" id="logoxxs"><img src="./assets/img/logos.png" alt="logo"  data-aos="fade-up" class="logo"></a>
       <button  data-aos="fade-up" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span  data-aos="fade-up" class="navbar-toggler-icon"></span>
       </button>
@@ -807,6 +807,12 @@
         effect: "cards",
         grabCursor: true,
       });
+    </script>
+      
+    <script>
+        document.getElementById('logoxxs').addEventListener('click', () => {
+            window.location.reload();
+        })
     </script>
 
     <script>
